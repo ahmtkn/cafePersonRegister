@@ -10,8 +10,10 @@ public class Main {
 		customer.setNationalIdentity("12345678912");
 		customer.setDateOfBirth("2000");
 		
-		BaseCustomerManager baseManager = new StarbucksCustomerManager();
-		baseManager.saved(customer);
+		BaseCustomerManager manager = new StarbucksCustomerManager(new CustomerCheckManager());
+		manager.saved(customer);
+		
+		
 		
 	}
 

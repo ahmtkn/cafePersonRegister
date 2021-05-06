@@ -1,6 +1,5 @@
 package cafeServices;
 
-import java.sql.Date;
 
 public class Customer {
 	
